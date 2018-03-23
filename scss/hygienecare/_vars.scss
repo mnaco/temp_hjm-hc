@@ -1,0 +1,15 @@
+// overwrites
+
+// replace green colours
+$green: #2091e1;
+$dark-green: darken($green, 10%);
+$medium-green: lighten($dark-green, 10%);
+$light-green:lighten($dark-green, 20%);
+$lightest-green: #dcece2;
+// hc colour
+$hc-color: #2091e1;
+
+// replace content maxwidth 
+$max-width: 900px;
+
+$hc-contentWidth: 1224px;

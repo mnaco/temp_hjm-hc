@@ -15,7 +15,7 @@ module.exports = function (grunt) {
           cwd: 'scss',
           // src: ['**/*.scss'], // compiel all scss files
           src: ['*.scss'], // compile files only in root folder
-          dest: 'www/css',
+          dest: 'assets/css',
           ext: '.css'
         }]
       }
@@ -31,7 +31,7 @@ module.exports = function (grunt) {
         ]
       },
       dist: {
-        src: ['www/css/style.css']
+        src: ['assets/css/style.css']
       }
     },
     // css minify
@@ -39,34 +39,13 @@ module.exports = function (grunt) {
       target: {
         files: [{
           expand: true,
-          cwd: 'www/css',
+          cwd: 'assets/css',
           src: ['*.css', '!*.min.css'],
-          dest: 'www/css',
+          dest: 'assets/css',
           ext: '.min.css'
         }]
       }
     },
-    // js uglify
-    // uglify: {
-    //   options: {
-    //     beautify: true,
-    //     sourceMap: false
-    //   },
-    //   concat: {
-    //     src: ['src/**/*.js'],
-    //     dest: 'www/js/min.js'
-    //   },
-    //   each: {
-    //     files: [{
-    //       cwd: 'src/',
-    //       src: '**/*.js',
-    //       dest: 'www/js/',
-    //       ext: '.min.js',
-    //       expand: true,
-    //       flatten: true
-    //     }]
-    //   }
-    // },
     // watch for changes
     watch: {
       css: {
@@ -85,7 +64,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  // grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // register grunt tasks
   grunt.registerTask('default', ['watch:css']);
