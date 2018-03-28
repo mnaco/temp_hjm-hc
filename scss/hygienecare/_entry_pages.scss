@@ -1,0 +1,71 @@
+// entrypage hero 
+.cc-entrypage-hero {
+  background-color: $hc-lightblue;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+  color: #fff;
+  .title, 
+  .subtitle {
+    color: #fff;
+  }
+  // background images
+  @include tablet {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    &.cc-entrypage-sectors {
+      background-image: url("../img/entrypage_hero_background_one.png");
+    }
+  }
+}
+.cc-entrypage-hero-content {
+  width: 50%;
+  @include mobile {
+    width: 100%;
+  }
+}
+// hero images
+
+
+// entrypage content
+.cc-entrypage-section {
+  text-align: center;
+  .content {
+    display: inline-block;
+    @include desktop {
+      width: 80%;
+    }
+  }
+}
+
+// entrypage navigation
+.cc-entrypage-nav {
+  ul { 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    flex-basis: 50%;
+    padding: 0.4rem 0;
+    &:nth-child(odd) { padding-right: 1rem; }
+    &:nth-child(even) { padding-left: 1rem; }
+    + li { margin: 0; }
+    @include mobile {
+      flex-basis: 100%;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+  a {
+    display: block;
+    background: whitesmoke;
+    padding: 1rem;
+    text-align: center;
+    &:hover {
+      background: #eee;
+    }
+  }
+}

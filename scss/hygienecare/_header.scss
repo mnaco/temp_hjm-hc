@@ -1,0 +1,27 @@
+$hc-navbar-height: 6rem; //$navbar-height
+
+.navbar.is-fixed-top {
+  + * {
+    margin-top: $hc-navbar-height;
+  }
+}
+.cc-page-header {
+  border-bottom: 1px solid #eee;
+  // min-height: $hc-navbar-height;
+  height: $hc-navbar-height;
+  padding-bottom: 0.5rem;
+  .navbar-item {
+    align-items: flex-end;
+    color: $hc-blue;
+    &:hover { 
+      color: #333;
+      background-color: transparent;
+    }
+  }
+}
+.cc-logo  img {
+  max-height: 3.75rem;
+}
+.cc-main-menu {
+  font-size: 0.9rem;
+}

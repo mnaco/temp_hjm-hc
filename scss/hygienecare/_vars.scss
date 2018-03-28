@@ -1,15 +1,3 @@
-// overwrites
-
-// replace green colours
-$green: #2091e1;
-$dark-green: darken($green, 10%);
-$medium-green: lighten($dark-green, 10%);
-$light-green:lighten($dark-green, 20%);
-$lightest-green: #dcece2;
-// hc colour
-$hc-color: #2091e1;
-
-// replace content maxwidth 
-$max-width: 900px;
-
-$hc-contentWidth: 1224px;
+// colors
+$hc-blue: hsl(210,40,50); //rgb(66,123,177)
+$hc-lightblue: hsl(200,63,63); //rgb(103,181,221)
