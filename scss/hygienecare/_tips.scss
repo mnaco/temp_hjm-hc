@@ -1,0 +1,21 @@
+// tips
+.cc-tip {
+  
+  $hc-tip-color: hsl(50, 100, 50);
+
+  position: relative;
+  background: lighten($hc-tip-color, 48%);
+  font-size: 0.8rem;
+  .message-body {
+    border-color: lighten($hc-tip-color, 35%);
+    padding-left: 2rem;
+  }
+  .icon {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    border: solid 1px $hc-tip-color;
+    background: lighten($hc-tip-color, 50%);
+    color: $hc-tip-color;
+  }
+}

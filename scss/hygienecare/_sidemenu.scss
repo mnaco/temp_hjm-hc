@@ -1,0 +1,32 @@
+// side menu
+
+.menu-list {
+  font-size: $body-size;
+  margin-bottom: 1rem;
+  ul { display: none; }
+  a {
+    color: $hc-color-lightblue;
+    border-top: 1px solid #fff;
+    background: whitesmoke;
+    &:hover { color: $hc-color-blue; }
+    &.is-active {
+      background: #eee;
+      color: $text;
+      cursor: default;
+      + ul { 
+        display: block;
+        a {
+          background: whitesmoke;
+          // border-top-color: #eee;
+          // &.is-active { background: transparent; }
+        }
+      }
+    }
+  }
+  
+  li ul {
+    margin: 0;
+    border: 0;
+    padding: 0 0 0 0.75rem;
+  }
+}

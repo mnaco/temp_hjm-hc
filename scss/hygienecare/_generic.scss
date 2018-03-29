@@ -1,0 +1,7 @@
+body {
+  //  font-size: $hc-body-size;
+}
+a { 
+  color: $hc-color-lightblue;
+  &:hover { color: $hc-color-blue; }
+}

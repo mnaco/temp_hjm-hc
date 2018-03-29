@@ -7574,9 +7574,6 @@ a {
 .cc-logo img {
   max-height: 3.75rem; }
 
-.cc-main-menu {
-  font-size: 0.9rem; }
-
 .cc-page-footer {
   padding: 0;
   background: whitesmoke;
@@ -7605,6 +7602,45 @@ a {
       .cc-page-footer .is-pulled-left,
       .cc-page-footer .is-pulled-right {
         float: none !important; } }
+
+.menu-list {
+  font-size: 16px;
+  margin-bottom: 1rem; }
+  .menu-list ul {
+    display: none; }
+  .menu-list a {
+    color: #65b4dc;
+    border-top: 1px solid #fff;
+    background: whitesmoke; }
+    .menu-list a:hover {
+      color: #4d80b3; }
+    .menu-list a.is-active {
+      background: #eee;
+      color: #4a4a4a;
+      cursor: default; }
+      .menu-list a.is-active + ul {
+        display: block; }
+        .menu-list a.is-active + ul a {
+          background: whitesmoke; }
+  .menu-list li ul {
+    margin: 0;
+    border: 0;
+    padding: 0 0 0 0.75rem; }
+
+.cc-tip {
+  position: relative;
+  background: #fffdf5;
+  font-size: 0.8rem; }
+  .cc-tip .message-body {
+    border-color: #fff2b3;
+    padding-left: 2rem; }
+  .cc-tip .icon {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    border: solid 1px #ffd500;
+    background: white;
+    color: #ffd500; }
 
 .cc-entrypage-hero {
   background-color: #65b4dc;

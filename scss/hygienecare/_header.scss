@@ -12,7 +12,7 @@ $hc-navbar-height: 6rem; //$navbar-height
   padding-bottom: 0.5rem;
   .navbar-item {
     align-items: flex-end;
-    color: $hc-blue;
+    color: $hc-color-blue;
     &:hover { 
       color: #333;
       background-color: transparent;
@@ -23,5 +23,5 @@ $hc-navbar-height: 6rem; //$navbar-height
   max-height: 3.75rem;
 }
 .cc-main-menu {
-  font-size: 0.9rem;
+  // font-size: 0.9rem;
 }

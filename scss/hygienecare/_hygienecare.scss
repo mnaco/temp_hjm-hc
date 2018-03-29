@@ -1,10 +1,12 @@
-@import 'vars';
 @import 'vendors/bulma/bulma';
-@import 'bulma_overrides';
+@import 'vars';
+@import 'generic';
 
 @import 'header';
 @import 'footer';
-@import 'components';
+
+@import 'sidemenu';
+@import 'tips';
 
 // pages
 @import 'entry_pages';
