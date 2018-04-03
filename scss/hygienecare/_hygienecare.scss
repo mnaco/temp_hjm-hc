@@ -1,13 +1,17 @@
 @import 'vendors/bulma/bulma';
 @import 'vars';
 @import 'generic';
+@import 'vendors/bulma-ext/bulma.accordion';
 
 @import 'header';
 @import 'footer';
 
-@import 'sidemenu';
-@import 'tips';
+// layout elements
+@import 'layout/layout';
+@import 'layout/aside';
+@import 'layout/tips';
+@import 'layout/product';
 
 // pages
-@import 'entry_pages';
+@import 'pages/entry';
  

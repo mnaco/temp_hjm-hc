@@ -21,4 +21,10 @@
     dropdown.removeClass('is-active');
   });
 
+  // aside menu dropdown (available on mobiles)
+  jQuery('.cc-side-menu-dropdown').on('click', function() {
+    jQuery(this).toggleClass('is-active');
+    jQuery(this).next('.cc-aside-menu').toggleClass('is-hidden-mobile');
+  });
+
 })();

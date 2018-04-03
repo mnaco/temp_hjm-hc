@@ -1,5 +1,36 @@
-// side menu
+// aside section dropdown
+.cc-section-dropdownmenu {
+  margin-bottom: 1rem;
+  width: 100%;
+  .dropdown-trigger { width: 100%; }
+  button { 
+    width: 100%; 
+    span:first-child { 
+      flex-grow: 1; 
+      text-align: left;
+    }
+  }
+}
 
+// aside menu dropdown
+// available on mobiles
+.cc-side-menu-dropdown {
+  display: none;
+  margin-bottom: 1rem;
+  button { width: 100%; }
+  .cc-button-title {
+    flex-grow: 1;
+    text-align: left;
+  }
+  .icon { transition: all 0.3s ease; }
+  &.is-active {
+    .icon {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+// aside menu
 .menu-list {
   font-size: $body-size;
   margin-bottom: 1rem;
@@ -23,10 +54,11 @@
       }
     }
   }
-  
   li ul {
     margin: 0;
     border: 0;
     padding: 0 0 0 0.75rem;
   }
 }
+
+//

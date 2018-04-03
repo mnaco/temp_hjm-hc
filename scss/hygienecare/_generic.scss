@@ -4,4 +4,7 @@ body {
 a { 
   color: $hc-color-lightblue;
   &:hover { color: $hc-color-blue; }
+  &.is-active { color: $text; }
 }
+
+.title { color: $hc-color-blue; }
