@@ -1,27 +1,54 @@
-$hc-navbar-height: 6rem; //$navbar-height
+// page header
 
+// burger menu | navbar
+.navbar {
+  // min-height: $hc-header-height;
+}
+.navbar-brand {
+  align-items: center;
+  min-height: $hc-header-height;
+}
+.navbar-burger {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 0.5rem;
+  &:hover {
+    background-color: transparent;
+    span { background-color: $hc-color-blue; }
+  }
+  span {
+    height: 2px;
+    background-color: $hc-color-lightblue;
+  }
+}
+a.navbar-item {
+  align-items: center;
+  color: $hc-color-lightblue;
+  font-weight: bold;
+  font-size: 0.9rem;
+  // padding-bottom: 10px;
+  &:hover { 
+    color: $hc-color-blue;
+    background-color: transparent;
+  }
+  &.is-active { color: $text; }
+}
 .navbar.is-fixed-top {
   + * {
-    margin-top: $hc-navbar-height;
+    margin-top: $hc-header-height;
   }
 }
+
 .cc-page-header {
-  border-bottom: 1px solid #eee;
-  // min-height: $hc-navbar-height;
-  height: $hc-navbar-height;
-  padding-bottom: 0.5rem;
-  .navbar-item {
-    align-items: flex-end;
-    color: $hc-color-blue;
-    &:hover { 
-      color: #333;
-      background-color: transparent;
-    }
-  }
+  border-bottom: 1px solid $hc-color-lightblue;
+  // height: $hc-header-height;
+  // padding-bottom: 0.5rem;
 }
+
 .cc-logo  img {
-  max-height: 3.75rem;
+  max-height: 100%;
 }
+
 .cc-main-menu {
   // font-size: 0.9rem;
 }

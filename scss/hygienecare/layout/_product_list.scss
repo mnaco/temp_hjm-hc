@@ -1,0 +1,46 @@
+// products list
+
+.cc-product-list {
+  > ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li { 
+      margin-bottom: 1rem;
+      width: 49%;
+      @include mobile {
+        width: 100%;
+      }
+      @include fullhd {
+        width: 32%;
+      }
+    }
+  }
+}
+
+// single item
+.cc-item {
+  background: whitesmoke;
+  border: 1px solid $border;
+  display: flex;
+  @include mobile {
+    flex-direction: column;
+  }
+}
+.cc-item-content {
+  width: 60%;
+  flex: none;
+  padding: 0.5rem;
+  color: $text;
+  font-size: 0.8rem;
+  .title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  @include mobile {
+    width: 80%;
+  }
+}
+.cc-item-image {
+  border-left: 1px solid $border;
+}
