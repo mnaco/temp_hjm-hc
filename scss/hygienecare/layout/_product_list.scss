@@ -6,6 +6,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     li { 
+      > a { height: 100%; }
       margin-bottom: 1rem;
       width: 49%;
       @include mobile {
@@ -23,6 +24,7 @@
   background: whitesmoke;
   border: 1px solid $border;
   display: flex;
+  height: 100%;
   @include mobile {
     flex-direction: column;
   }

@@ -43,6 +43,15 @@ a.navbar-item {
   border-bottom: 1px solid $hc-color-lightblue;
   // height: $hc-header-height;
   // padding-bottom: 0.5rem;
+  background: whitesmoke;
+  height: $hc-header-height;
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+  &.nav-up {
+    top: - $hc-header-height;
+  }
 }
 
 .cc-logo  img {
