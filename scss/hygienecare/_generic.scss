@@ -1,5 +1,5 @@
-body {
-  //  font-size: $hc-body-size;
+html {
+  font-size: 14px;
 }
 a { 
   color: $hc-color-lightblue;
@@ -9,9 +9,3 @@ a {
 
 .title { color: $hc-color-blue; }
 
-.cc-page-title { 
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid $border;
-  .title { margin: 0 }
-}

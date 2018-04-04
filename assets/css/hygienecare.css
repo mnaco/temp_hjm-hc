@@ -7550,6 +7550,9 @@ label.panel-block {
   background-color: whitesmoke;
   padding: 3rem 1.5rem 6rem; }
 
+html {
+  font-size: 14px; }
+
 a {
   color: #65b4dc; }
   a:hover {
@@ -7559,13 +7562,6 @@ a {
 
 .title {
   color: #4d80b3; }
-
-.cc-page-title {
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid #dbdbdb; }
-  .cc-page-title .title {
-    margin: 0; }
 
 .accordions .accordion {
   display: -webkit-box;
@@ -7768,7 +7764,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 4.8rem; }
+  min-height: 6rem; }
 
 .navbar-burger {
   width: 4rem;
@@ -7796,19 +7792,18 @@ a.navbar-item {
     color: #4a4a4a; }
 
 .navbar.is-fixed-top + * {
-  margin-top: 4.8rem; }
+  margin-top: 6rem; }
 
 .cc-page-header {
   border-bottom: 1px solid #65b4dc;
-  background: whitesmoke;
-  height: 4.8rem;
+  height: 6rem;
   position: fixed;
   top: 0;
-  -webkit-transition: top 0.2s ease-in-out;
-  transition: top 0.2s ease-in-out;
+  -webkit-transition: top 0.2s ease-out;
+  transition: top 0.2s ease-out;
   width: 100%; }
   .cc-page-header.nav-up {
-    top: -4.8rem; }
+    top: -6rem; }
 
 .cc-logo img {
   max-height: 100%; }
@@ -7873,7 +7868,6 @@ a.navbar-item {
             transform: rotate(180deg); }
 
 .menu-list {
-  font-size: 16px;
   margin-bottom: 1rem; }
   .menu-list ul {
     display: none; }
@@ -7895,6 +7889,32 @@ a.navbar-item {
     margin: 0;
     border: 0;
     padding: 0 0 0 0.75rem; }
+
+.cc-page-title {
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #dbdbdb; }
+  .cc-page-title .title {
+    font-weight: normal;
+    margin: 0; }
+  .cc-page-title + .cc-page-breadcrumb {
+    margin-top: -0.5rem; }
+
+.cc-page-breadcrumb {
+  font-size: 0.8rem;
+  margin-bottom: 1rem; }
+  .cc-page-breadcrumb li {
+    position: relative;
+    padding: 0 0 0 1em;
+    margin-right: 0.5em; }
+    .cc-page-breadcrumb li:first-child {
+      padding-left: 0; }
+    .cc-page-breadcrumb li:before {
+      position: absolute;
+      left: 0;
+      top: 0; }
+  .cc-page-breadcrumb a {
+    padding: 0; }
 
 .cc-tip {
   position: relative;
@@ -7974,6 +7994,9 @@ a.navbar-item {
   .cc-product-docs li {
     padding-top: 0.7rem; }
 
+.cc-product-list-block {
+  margin: 2rem 0; }
+
 .cc-product-list > ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7988,15 +8011,24 @@ a.navbar-item {
     width: 49%; }
     .cc-product-list > ul li > a {
       height: 100%; }
-    @media screen and (max-width: 768px) {
+      .cc-product-list > ul li > a:hover .cc-item {
+        border-color: #4d80b3; }
+    @media screen and (max-width: 480px) {
       .cc-product-list > ul li {
         width: 100%; } }
-    @media screen and (min-width: 1408px) {
+    @media screen and (min-width: 1216px) {
       .cc-product-list > ul li {
         width: 32%; } }
 
+.cc-product-list.cc-view-list li {
+  width: 100%; }
+
+.cc-product-list.cc-view-list .cc-item-image {
+  -ms-flex-preferred-size: 60px;
+      flex-basis: 60px; }
+
 .cc-item {
-  background: whitesmoke;
+  background: #eaecf0;
   border: 1px solid #dbdbdb;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8010,10 +8042,9 @@ a.navbar-item {
               flex-direction: column; } }
 
 .cc-item-content {
-  width: 60%;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding: 0.5rem;
   color: #4a4a4a;
   font-size: 0.8rem; }
@@ -8022,10 +8053,19 @@ a.navbar-item {
     margin-bottom: 0.5rem; }
   @media screen and (max-width: 768px) {
     .cc-item-content {
-      width: 80%; } }
+      width: 100%; } }
 
 .cc-item-image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 140px;
+          flex: 0 140px;
   border-left: 1px solid #dbdbdb; }
+
+.cc-view-list-option {
+  padding-top: 1rem;
+  color: #bbb; }
+  .cc-view-list-option span:hover {
+    color: #4d80b3; }
 
 .cc-entrypage-hero {
   background-color: #65b4dc;
@@ -8091,3 +8131,10 @@ a.navbar-item {
   text-align: center; }
   .cc-entrypage-nav a:hover {
     background: #eee; }
+
+.cc-product-ab .columns {
+  margin-top: 1rem;
+  border-bottom: 1px solid #dbdbdb; }
+
+.cc-product-ab .is-narrow {
+  min-width: 210px; }

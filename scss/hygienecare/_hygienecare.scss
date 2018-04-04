@@ -1,6 +1,7 @@
 @import 'vendors/bulma/bulma';
 @import 'vars';
 @import 'generic';
+@import 'mixins';
 @import 'vendors/bulma-ext/bulma.accordion';
 
 @import 'header';
@@ -9,10 +10,12 @@
 // layout elements
 @import 'layout/layout';
 @import 'layout/aside';
+@import 'layout/content';
 @import 'layout/tips';
 @import 'layout/product';
 @import 'layout/product_list';
 
 // pages
 @import 'pages/entry';
+@import 'pages/product_ab';
  

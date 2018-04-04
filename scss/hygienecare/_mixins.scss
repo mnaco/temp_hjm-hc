@@ -1,0 +1,7 @@
+// media quiries for small screens
+$minimobile: 480px;
+@mixin minimobile {
+  @media screen and (max-width: $minimobile) {
+    @content;
+  }
+}

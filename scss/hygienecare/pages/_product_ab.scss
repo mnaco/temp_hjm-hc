@@ -1,0 +1,10 @@
+// anwendungspereiche
+.cc-product-ab {
+  .columns {
+    margin-top: 1rem;
+    border-bottom: 1px solid $border;
+  }
+  .is-narrow {
+    min-width: 210px;
+  }
+}
