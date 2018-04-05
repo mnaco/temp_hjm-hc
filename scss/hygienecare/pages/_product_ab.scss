@@ -7,4 +7,16 @@
   .is-narrow {
     min-width: 210px;
   }
+  .cc-product-list.cc-view-list .cc-item-image {
+    flex-basis: 80px;
+  }
+}
+
+// ab label
+.cc-ab-label {
+  background: #fff;
+  border: 0.5rem 0;
+  padding: .2em;
+  border: 1px solid $border;
+  font-size: 0.8rem; 
 }

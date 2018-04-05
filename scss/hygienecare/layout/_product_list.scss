@@ -47,6 +47,8 @@
   }
 }
 .cc-item-content {
+  display: flex;
+  flex-direction: column;
   flex: 1;
   padding: 0.5rem;
   color: $text;
@@ -55,6 +57,11 @@
     font-size: 1rem;
     margin-bottom: 0.5rem;
   }
+  .content { 
+    flex-grow: 1;
+    margin: 0 0 0.5rem;
+  }
+  .cc-content-footer {  }
   @include mobile {
     width: 100%;
   }
