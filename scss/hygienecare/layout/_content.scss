@@ -3,12 +3,21 @@
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid $border;
-  .title { 
+  height: 2.4rem;
+  .title,
+  .subtitle { 
     font-weight: normal;
     margin: 0;
+    color: $hc-color-blue;
+  }
+  .title { font-size: 1.6rem; }
+  .subtitle { 
+    font-size: 1.2rem;
+    padding-top: 0.4rem;
   }
   + .cc-page-breadcrumb { margin-top: -0.5rem; }
 }
+
 
 .cc-page-breadcrumb {
   font-size: 0.8rem;

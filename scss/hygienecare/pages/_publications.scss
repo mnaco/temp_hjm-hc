@@ -1,0 +1,28 @@
+// publications page
+.cc-publications-list {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  .columns {
+    padding: 1.5rem 0 1rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid $border;
+    margin: 0;
+  }
+  .column { 
+    padding: 0;
+  }
+  .cc-donwload {
+    font-size: 0.8em;
+    text-align: right;
+    padding-top: 0.3rem;
+    span { vertical-align: middle; }
+    span:last-child { 
+      font-size: 1rem;
+    }
+    @include mobile {
+      text-align: left;
+    }
+  }
+  .title { margin-bottom: 0.5rem; }
+  
+}

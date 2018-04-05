@@ -7893,10 +7893,18 @@ a.navbar-item {
 .cc-page-title {
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
-  border-bottom: 1px solid #dbdbdb; }
-  .cc-page-title .title {
+  border-bottom: 1px solid #dbdbdb;
+  height: 2.4rem; }
+  .cc-page-title .title,
+  .cc-page-title .subtitle {
     font-weight: normal;
-    margin: 0; }
+    margin: 0;
+    color: #4d80b3; }
+  .cc-page-title .title {
+    font-size: 1.6rem; }
+  .cc-page-title .subtitle {
+    font-size: 1.2rem;
+    padding-top: 0.4rem; }
   .cc-page-title + .cc-page-breadcrumb {
     margin-top: -0.5rem; }
 
@@ -8161,3 +8169,27 @@ a.navbar-item {
   padding: .2em;
   border: 1px solid #dbdbdb;
   font-size: 0.8rem; }
+
+.cc-publications-list {
+  margin: 1rem 0;
+  font-size: 0.9rem; }
+  .cc-publications-list .columns {
+    padding: 1.5rem 0 1rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #dbdbdb;
+    margin: 0; }
+  .cc-publications-list .column {
+    padding: 0; }
+  .cc-publications-list .cc-donwload {
+    font-size: 0.8em;
+    text-align: right;
+    padding-top: 0.3rem; }
+    .cc-publications-list .cc-donwload span {
+      vertical-align: middle; }
+    .cc-publications-list .cc-donwload span:last-child {
+      font-size: 1rem; }
+    @media screen and (max-width: 768px) {
+      .cc-publications-list .cc-donwload {
+        text-align: left; } }
+  .cc-publications-list .title {
+    margin-bottom: 0.5rem; }
