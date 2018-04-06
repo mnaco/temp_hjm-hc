@@ -33,12 +33,21 @@
     omission: ' &rarr;'
   });
 
-  // 'column-list' view trigger in products list
+  // trigger column/list view of product list
   jQuery('.cc-show-list').on('click', function () {
     jQuery('.cc-product-list').addClass('cc-view-list');
   });
   jQuery('.cc-show-column').on('click', function () {
     jQuery('.cc-product-list').removeClass('cc-view-list');
+  });
+
+  // bulma accordion controller
+  var accordion = jQuery('.accordion')
+  jQuery('.accordion').on('click', function () {
+    var currentAccordion = jQuery(this);
+    // var accordionsHolder = jQuery(this).closest('.accordions');
+    // accordionsHolder.find('.accordion').removeClass('is-active');
+    currentAccordion.toggleClass('is-active');
   });
   
 })();

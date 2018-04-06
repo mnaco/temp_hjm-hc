@@ -1,4 +1,13 @@
+// font awesome | version 5.x
+@import 'vendors/fontawesome/web-fonts-with-css/scss/fontawesome.scss';
+@import 'vendors/fontawesome/web-fonts-with-css/scss/fa-brands.scss';
+@import 'vendors/fontawesome/web-fonts-with-css/scss/fa-regular.scss';
+@import 'vendors/fontawesome/web-fonts-with-css/scss/fa-solid.scss';
+
+// bulma framework
 @import 'vendors/bulma/bulma';
+
+// generic
 @import 'vars';
 @import 'generic';
 @import 'mixins';
