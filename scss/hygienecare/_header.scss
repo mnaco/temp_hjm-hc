@@ -8,6 +8,7 @@
   align-items: center;
   min-height: $hc-header-height;
 }
+
 .navbar-burger {
   width: 4rem;
   height: 4rem;
@@ -24,16 +25,24 @@
 a.navbar-item {
   align-items: center;
   color: $hc-color-lightblue;
-  font-weight: bold;
-  font-size: 0.9rem;
+  // font-weight: bold;
+  // font-size: 0.9rem;
   // padding-bottom: 10px;
+  padding: 1rem; 
+  @include desktop {
+    padding: 0.5rem 1rem;
+  } 
   &:hover { 
     color: $hc-color-blue;
     background-color: transparent;
   }
-  &.is-active { color: $text; }
+  &.is-active { 
+    color: $text;
+    background: transparent;
+  }
 }
 .navbar.is-fixed-top {
+
   + * {
     margin-top: $hc-header-height;
   }
@@ -45,7 +54,6 @@ a.navbar-item {
   // padding-bottom: 0.5rem;
   // background: whitesmoke;
   height: $hc-header-height;
-  position: fixed;
   top: 0;
   transition: top 0.2s ease-out;
   width: 100%;

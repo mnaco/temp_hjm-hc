@@ -1,0 +1,129 @@
+// start page
+
+// header
+.cc-startpage {
+
+  $hc-startpage-header-height-top: 8rem;
+  $hc-startpage-header-height-bottom: 4rem;
+
+
+  &.cc-page-header {
+    height: auto;
+    // background: whitesmoke;
+    &:after {
+      display: none;
+      @include desktop {
+        display: block;
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        height: $hc-startpage-header-height-bottom;
+        width: 100%;
+        background-color: $hc-color-blue;
+      }
+    }
+    .container {
+      display: block;
+      z-index: 1;
+    }
+    
+    &.is-fixed-top {
+      + * { margin-top: $hc-startpage-header-height-top + $hc-startpage-header-height-bottom }
+    }
+
+    .navbar-brand {
+      height: $hc-startpage-header-height-top;
+    }
+    .navbar-end {
+      @include desktop {
+        height: $hc-startpage-header-height-bottom;
+      }
+      margin: 0;
+      border-left: 1px solid rgba(255,255,255,0.2);
+      .navbar-item {
+        color: #fff;
+        // padding: 0.9rem 2rem;
+        font-size: 1.4rem;
+        font-weight: normal;
+        line-height: 1;
+        border-right: 1px solid rgba(255,255,255,0.2);
+        // text-transform: uppercase;
+        &:hover {
+          background-color: $hc-color-lightblue;
+        } 
+      }
+    }
+    .navbar-menu {
+      background: $hc-color-blue;
+    }
+  }
+}
+
+
+// content
+
+// generic elements on startpage
+.cc-body-startpage {
+  // section titles
+  .section {
+    &.last { padding-bottom: 6rem; }
+    .title {
+      font-size: 2rem; 
+      color: $hc-color-blue !important; 
+    }
+  }
+}
+
+.cc-startpage-hero {
+  background: whitesmoke;
+}
+
+// sections
+.cc-section-welcome {
+  font-size: 1.4em;
+  .subtitle { color: $hc-color-blue; }
+}
+
+// section anwendungsbereiche
+.cc-section-ab {
+  margin: 1rem 0;
+  .cc-card {
+    border: 1px solid $border;
+    height: 100%;
+  }
+  .cc-card-header {
+    a {
+      display: block;
+      color: #fff;
+      text-align: center;
+      font-size: 1.4rem;
+      padding: 0.8rem 0.5rem;
+      text-transform: uppercase;
+    }
+    background: $hc-color-blue;
+  }
+  .cc-card-content { padding: 1rem; }
+}
+
+// section feautured product
+.cc-featured-product {
+  .content {
+    text-align: center;
+  }
+  .columns {
+    margin: 0 auto;
+    text-align: left;
+    background: whitesmoke;
+    @include desktop {
+      width: 60%;
+    }
+  }
+  // .column { padding: 0; }
+  .cc-image { 
+    img { display: block; }
+  }
+  .cc-content { 
+    padding: 2rem;
+  }
+}

@@ -44,14 +44,16 @@
 })();
 
 
-// floating sticky header
+/*
+** floating sticky header
+*/
 (function () {
 
   // Hide Header on on scroll down
   var didScroll;
   var lastScrollTop = 0;
   var delta = 5;
-  var headerSelector = jQuery('.cc-page-header');
+  var headerSelector = jQuery('.cc-page-header').not('.cc-startpage');
   var navbarHeight = headerSelector.outerHeight();
 
   jQuery(window).scroll(function (event) {

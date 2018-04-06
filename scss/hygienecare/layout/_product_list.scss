@@ -38,12 +38,13 @@
 
 // single item
 .cc-item {
+  flex-direction: column;
   background: $hc-color-whiteblue;
   border: 1px solid $border;
   display: flex;
   height: 100%;
-  @include mobile {
-    flex-direction: column;
+  @include desktop {
+    flex-direction: row;
   }
 }
 .cc-item-content {
@@ -73,7 +74,7 @@
 
 // list view options
 .cc-view-list-option { 
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   color: #bbb;
   span:hover { color: $hc-color-blue; }
 }
