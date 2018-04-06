@@ -1,0 +1,42 @@
+// calcualtor (Konzentratrechner)
+.cc-calculator {
+  .columns {
+    margin: 2rem 0;
+  }
+  .column {
+    align-self: center;
+    min-height: 100px;
+    input {
+      font-size: 2rem;
+      padding: 1em 0.5em;
+    }
+  }
+  .cc-arrow-column { 
+    position: relative;
+    min-width: 100px;
+    flex: 0;
+  }
+  .cc-arrow {
+    font-size: 100px;
+    top: 50%;
+    left: 50%;
+    margin: -0.25em 0 0 -0.35em;
+    @include arrow($hc-color-lightblue);
+    @include tablet {
+      transform: rotate(-135deg);
+      margin-top: -0.1em;
+    }
+  }
+  .cc-result { 
+    input {
+      font-size: 3rem;
+      padding: 1.5em 1em;
+      text-align: center;
+      &:disabled { 
+        color: $text;
+        background: #fff;
+        border-color: #ccc;
+      }
+    }
+  }
+}

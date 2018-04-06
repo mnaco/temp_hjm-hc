@@ -1,0 +1,60 @@
+// service - download center
+
+// documents menu
+.cc-docs-menu {
+  border: 1px solid $border;
+  margin-bottom: 1rem;
+  padding: 0.75rem 0.75rem 1.5rem;
+  .cc-menu-title {
+    background: whitesmoke;
+    font-size: 1.1em;
+    margin: -0.75rem -0.75rem 1rem;
+    padding: 0.75rem;
+  }
+  .columns {
+    margin-top: 1rem;
+  }
+  .column {
+    padding: 0 0.75rem;
+    &.is-narrow { 
+      width: 100px;
+      font-size: 0.9rem;
+      color: #999;
+      padding-bottom: 1rem;
+      @include tablet {
+        border-right: 1px solid #eee;
+      }
+    }
+  }
+}
+
+label.checkbox {
+  display: flex;
+  .cc-label {
+    padding: 1px 0 0 0.3em;
+  }
+}
+input[type="checkbox"] {}
+
+
+// download list
+.cc-download-item {
+  border-bottom: 1px solid $border;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  .cc-item-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  a {
+    display: flex;
+    padding: 0.5rem 0;
+  }
+  .cc-doc-title { 
+    flex: 1 0 auto;
+  }
+  .cc-doc-info { 
+    font-size: 0.8em;
+    color: #999;
+  }
+}
