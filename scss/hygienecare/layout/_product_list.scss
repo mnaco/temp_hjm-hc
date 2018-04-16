@@ -69,7 +69,11 @@
 }
 .cc-item-image {
   flex: 0 140px;
-  border-left: 1px solid $border;
+  // border-left: 1px solid $border;
+  padding: 5px;
+  .image {
+    border: 1px solid #ccc;
+  }
 }
 
 // list view options

@@ -10774,10 +10774,9 @@ a.navbar-item {
     margin: 0;
     color: #4d80b3; }
   .cc-page-title .title {
-    font-size: 1.6rem; }
+    font-size: 1.4rem; }
   .cc-page-title .subtitle {
-    font-size: 1.4rem;
-    padding-top: 0.2rem; }
+    font-size: 1.6rem; }
   .cc-page-title + .cc-page-breadcrumb {
     margin-top: -0.5rem; }
 
@@ -10956,7 +10955,9 @@ a.navbar-item {
   -webkit-box-flex: 0;
       -ms-flex: 0 140px;
           flex: 0 140px;
-  border-left: 1px solid #dbdbdb; }
+  padding: 5px; }
+  .cc-item-image .image {
+    border: 1px solid #ccc; }
 
 .cc-view-list-option {
   padding-top: 0.5rem;
@@ -11112,7 +11113,8 @@ a.navbar-item {
   display: block;
   background: whitesmoke;
   padding: 1rem;
-  text-align: center; }
+  text-align: center;
+  font-size: 1.3em; }
   .cc-entrypage-nav a:hover {
     background: #eee; }
 
