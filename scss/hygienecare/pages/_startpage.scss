@@ -5,8 +5,13 @@
 
   $hc-startpage-header-height-top: 8rem;
   $hc-startpage-header-height-bottom: 4rem;
-
-
+ 
+  @include desktop {
+    background-image: url("../img/header_background_image.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+  
   &.cc-page-header {
     height: auto;
     // background: whitesmoke;
