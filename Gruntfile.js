@@ -15,7 +15,7 @@ module.exports = function (grunt) {
           cwd: 'scss',
           // src: ['**/*.scss'], // compiel all scss files
           src: ['*.scss'], // compile files only in root folder
-          dest: 'assets/hygienecare/css',
+          dest: 'assets/hc/css',
           ext: '.css'
         }]
       }
@@ -31,7 +31,7 @@ module.exports = function (grunt) {
         ]
       },
       dist: {
-        src: ['assets/hygienecare/css/hygienecare.css']
+        src: ['assets/hc/css/hygienecare.css']
       }
     },
     // css minify
@@ -39,9 +39,9 @@ module.exports = function (grunt) {
       target: {
         files: [{
           expand: true,
-          cwd: 'assets/hygienecare/css',
+          cwd: 'assets/hc/css',
           src: ['*.css', '!*.min.css'],
-          dest: 'assets/hygienecare/css',
+          dest: 'assets/hc/css',
           ext: '.min.css'
         }]
       }
