@@ -31,7 +31,7 @@ module.exports = function (grunt) {
         ]
       },
       dist: {
-        src: ['assets/hc/css/hygienecare.css']
+        src: ['assets/hc/css/hc.css']
       }
     },
     // css minify
