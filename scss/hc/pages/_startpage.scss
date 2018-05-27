@@ -14,6 +14,7 @@
   
   &.cc-page-header {
     height: auto;
+    margin-bottom: 2rem;
     // background: whitesmoke;
     &:after {
       display: none;
@@ -81,7 +82,7 @@
 }
 
 .cc-startpage-hero {
-  background: whitesmoke;
+  // background: whitesmoke;
 }
 
 // sections
@@ -93,6 +94,7 @@
 // section anwendungsbereiche
 .cc-section-ab {
   margin: 1rem 0;
+  padding-top: 0;
   .cc-card {
     border: 1px solid $border;
     height: 100%;

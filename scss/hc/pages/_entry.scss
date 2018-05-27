@@ -68,5 +68,12 @@
     &:hover {
       background: #eee;
     }
+    &.productfinder {
+      background: $hc-color-yellow;
+      color: #fff;
+      &:hover {
+        background: darken($hc-color-yellow, 5%)
+      }
+    }
   }
 }

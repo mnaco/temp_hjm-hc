@@ -10699,6 +10699,10 @@ a.navbar-item {
   .cc-page-footer .subtitle {
     font-size: 0.9rem;
     margin-bottom: .5rem; }
+    .cc-page-footer .subtitle a {
+      color: #4a4a4a; }
+      .cc-page-footer .subtitle a:hover {
+        color: #4d80b3; }
   .cc-page-footer .cc-footer-main {
     padding: 2rem 1.5rem; }
   .cc-page-footer .cc-footer-foot {
@@ -10976,7 +10980,8 @@ a.navbar-item {
     background-repeat: no-repeat; } }
 
 .cc-startpage.cc-page-header {
-  height: auto; }
+  height: auto;
+  margin-bottom: 2rem; }
   .cc-startpage.cc-page-header:after {
     display: none; }
     @media screen and (min-width: 1024px) {
@@ -11020,16 +11025,14 @@ a.navbar-item {
   font-size: 2rem;
   color: #4d80b3 !important; }
 
-.cc-startpage-hero {
-  background: whitesmoke; }
-
 .cc-section-welcome {
   font-size: 1.4em; }
   .cc-section-welcome .subtitle {
     color: #4d80b3; }
 
 .cc-section-ab {
-  margin: 1rem 0; }
+  margin: 1rem 0;
+  padding-top: 0; }
   .cc-section-ab .cc-card {
     border: 1px solid #dbdbdb;
     height: 100%; }
@@ -11127,6 +11130,11 @@ a.navbar-item {
   font-size: 1.3em; }
   .cc-entrypage-nav a:hover {
     background: #eee; }
+  .cc-entrypage-nav a.productfinder {
+    background: #fcb32c;
+    color: #fff; }
+    .cc-entrypage-nav a.productfinder:hover {
+      background: #fbaa13; }
 
 .cc-product-ab .columns {
   margin-top: 1rem;

@@ -13,6 +13,12 @@
   .subtitle { 
     font-size: 0.9rem;
     margin-bottom: .5rem;
+    a { 
+      color: $hc-default-color;
+      &:hover {
+        color: $hc-color-blue;
+      }
+    }
   }
   .cc-footer-main {
     padding: 2rem 1.5rem;
