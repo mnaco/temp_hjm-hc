@@ -1,0 +1,73 @@
+// glossary page
+
+// -----
+// glossary
+// glossary navigation
+.glossary-nav {
+  z-index: 1;
+  float: left;
+  margin: 0 0 40px 0px;
+  max-width: 140px;
+  ul { list-style: none; }
+  li {
+    float: left; 
+    font-size: 1.2em;
+    a {
+      display: block;
+      line-height: 2em;
+      height: 2em;
+      min-width: 40px;
+      margin: 0 4px 4px 0;
+      padding: 0 10px;
+      text-align: center;
+      background: #eee;
+      border: 1px solid #ccc;
+      &:hover {
+          border-color: $hc-color-lightblue;
+      }
+    }
+  }
+  @include desktop {
+    max-width: 260px;
+  }
+}
+// glossary list
+.glossary-list {
+  padding-left: 160px;
+  h4 {
+    float: left;
+    font-size: 1.4em;
+    margin-left: -40px;
+    display: none;
+  }
+  strong {
+    color: $hc-color-lightblue; 
+    text-transform: uppercase; 
+  }
+  p { margin-bottom: .3em; }
+  > div { 
+    padding: 0 0 0px 10px;
+    margin: 0 0 20px 0;
+    border-left: 1px solid #ccc;
+  }
+  .go-top { 
+    display: none;
+    float: right;
+    font-size: 16px;
+    border: 0;
+    .fa { display: inline-block; }
+    &:first-child { display: none; }
+  }
+  @include desktop {
+    padding-left: 340px;
+    h4 { display: block; }
+  }
+}
+
+// fixed sticky
+.fixedsticky {
+  &.glossary-nav { top: 20px; }
+  @include desktop {
+    &.glossary-nav { top: 120px; }
+  }
+}

@@ -10421,6 +10421,28 @@ label.panel-block {
   background-color: whitesmoke;
   padding: 3rem 1.5rem 6rem; }
 
+.fixedsticky {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky; }
+
+/* When position: sticky is supported but native behavior is ignored */
+.fixedsticky-withoutfixedfixed .fixedsticky-off,
+.fixed-supported .fixedsticky-off {
+  position: static; }
+
+.fixedsticky-withoutfixedfixed .fixedsticky-on,
+.fixed-supported .fixedsticky-on {
+  position: fixed; }
+
+.fixedsticky-dummy {
+  display: none; }
+
+.fixedsticky-on + .fixedsticky-dummy {
+  display: block; }
+
 html {
   font-size: 14px; }
 
@@ -11277,3 +11299,67 @@ label.checkbox {
     color: #4a4a4a;
     background: #fff;
     border-color: #ccc; }
+
+.glossary-nav {
+  z-index: 1;
+  float: left;
+  margin: 0 0 40px 0px;
+  max-width: 140px; }
+  .glossary-nav ul {
+    list-style: none; }
+  .glossary-nav li {
+    float: left;
+    font-size: 1.2em; }
+    .glossary-nav li a {
+      display: block;
+      line-height: 2em;
+      height: 2em;
+      min-width: 40px;
+      margin: 0 4px 4px 0;
+      padding: 0 10px;
+      text-align: center;
+      background: #eee;
+      border: 1px solid #ccc; }
+      .glossary-nav li a:hover {
+        border-color: #65b4dc; }
+  @media screen and (min-width: 1024px) {
+    .glossary-nav {
+      max-width: 260px; } }
+
+.glossary-list {
+  padding-left: 160px; }
+  .glossary-list h4 {
+    float: left;
+    font-size: 1.4em;
+    margin-left: -40px;
+    display: none; }
+  .glossary-list strong {
+    color: #65b4dc;
+    text-transform: uppercase; }
+  .glossary-list p {
+    margin-bottom: .3em; }
+  .glossary-list > div {
+    padding: 0 0 0px 10px;
+    margin: 0 0 20px 0;
+    border-left: 1px solid #ccc; }
+  .glossary-list .go-top {
+    display: none;
+    float: right;
+    font-size: 16px;
+    border: 0; }
+    .glossary-list .go-top .fa {
+      display: inline-block; }
+    .glossary-list .go-top:first-child {
+      display: none; }
+  @media screen and (min-width: 1024px) {
+    .glossary-list {
+      padding-left: 340px; }
+      .glossary-list h4 {
+        display: block; } }
+
+.fixedsticky.glossary-nav {
+  top: 20px; }
+
+@media screen and (min-width: 1024px) {
+  .fixedsticky.glossary-nav {
+    top: 120px; } }

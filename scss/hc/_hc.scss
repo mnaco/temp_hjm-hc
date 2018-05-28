@@ -7,6 +7,9 @@
 // bulma framework
 @import 'vendors/bulma/bulma';
 
+// fixed sticky
+@import 'vendors/fixedsticky/fixedsticky';
+
 // generic
 @import 'vars';
 @import 'generic';
@@ -31,4 +34,5 @@
 @import 'pages/publications';
 @import 'pages/service';
 @import 'pages/calculator';
+@import 'pages/glossary';
  
