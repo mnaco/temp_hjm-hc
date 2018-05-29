@@ -23,6 +23,10 @@
       text-align: left;
     }
   }
-  .title { margin-bottom: 0.5rem; }
+  .title { 
+    color: $hc-color-blue;
+    font-size: 1.3rem;
+    margin-bottom: 1rem; 
+  }
   
 }

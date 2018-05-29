@@ -11198,7 +11198,9 @@ a.navbar-item {
       .cc-subcontent-list .cc-donwload {
         text-align: left; } }
   .cc-subcontent-list .title {
-    margin-bottom: 0.5rem; }
+    color: #4d80b3;
+    font-size: 1.3rem;
+    margin-bottom: 1rem; }
 
 .cc-docs-menu {
   border: 1px solid #dbdbdb;
