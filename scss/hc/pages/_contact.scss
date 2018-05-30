@@ -1,60 +1,81 @@
 // contact form
 .contactForm {
-
-    .smallNote { font-size: .8em; }
     
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    
+    .smallNote {
+        text-align: left;
+        font-size: .8em;
+        margin-bottom: 1.5rem;
+    }
     form {
         margin: 0 auto;
         text-align: center;
     }
-
     .error {
         font-size: .8em;
         color: #900;
     }
-    input.error { border: 1px solid #900; }
-    
-    .required { 
+    input.error {
+        border: 1px solid #900;
+    }
+    .required {
         font-weight: bold;
-        &:after { 
+        &:after {
             font-size: .8em;
-            content: '*'; 
+            content: '*';
         }
     }
-
-    dl { 
+    dl {
         text-align: left;
         display: block;
         width: 100%;
-     }
-    dt, dd {
+    }
+    dt,
+    dd {
         display: inline-block;
         margin: 0;
+        vertical-align: top;
     }
     dt {
         min-width: 200px;
         text-align: right;
-        padding: 0.7em 10px 0 0;
-        vertical-align: top;
+        padding: 0.3em 10px 0 0;
+        display: block;
+        text-align: left;
     }
-    dd { display: inline-block; }
-    input[type='checkbox'] { width: 20px; }
-    input[type='text'] { width: 350px; }
-    textarea { width: 350px; }
-    input[name='fZip'] { width: 80px; }
-    input[name='fHouse'] { width: 120px; } 
-    input::placeholder { color: transparent; }
-
-    // mobile 
-     @include desktop {
-         dt { 
-             display: block;
-             text-align: left;
+    dd {
+        display: inline-block;
+    }
+    input[type='checkbox'] {
+        width: 20px;
+    }
+    input[type='text'] {
+        width: 350px;
+    }
+    textarea {
+        width: 350px;
+    }
+    input[name='fZip'] {
+        width: 80px;
+    }
+    input[name='fHouse'] {
+        width: 120px;
+    }
+    input::placeholder {
+        color: transparent;
+    } // mobile 
+    @include desktop {
+        dt {
+            display: inline-block; //  display: block;
+            //  text-align: left;
         }
-     }
-      @include desktop {
-          margin-bottom: 30px;
-          padding-bottom: 30px;
-          border-bottom: 1px solid #ccc;
-      }
+    }
+    @include desktop {
+        //   margin-bottom: 30px;
+        //   padding-bottom: 30px;
+        //   border-bottom: 1px solid #ccc;
+    }
 }

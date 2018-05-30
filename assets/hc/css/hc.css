@@ -11366,78 +11366,62 @@ label.checkbox {
   .fixedsticky.glossary-nav {
     top: 120px; } }
 
-.contactForm .smallNote {
-  font-size: .8em; }
-
-.contactForm form {
-  margin: 0 auto;
-  text-align: center; }
-
-.contactForm .error {
-  font-size: .8em;
-  color: #900; }
-
-.contactForm input.error {
-  border: 1px solid #900; }
-
-.contactForm .required {
-  font-weight: bold; }
-  .contactForm .required:after {
+.contactForm {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ccc; }
+  .contactForm .smallNote {
+    text-align: left;
     font-size: .8em;
-    content: '*'; }
-
-.contactForm dl {
-  text-align: left;
-  display: block;
-  width: 100%; }
-
-.contactForm dt, .contactForm dd {
-  display: inline-block;
-  margin: 0; }
-
-.contactForm dt {
-  min-width: 200px;
-  text-align: right;
-  padding: 0.7em 10px 0 0;
-  vertical-align: top; }
-
-.contactForm dd {
-  display: inline-block; }
-
-.contactForm input[type='checkbox'] {
-  width: 20px; }
-
-.contactForm input[type='text'] {
-  width: 350px; }
-
-.contactForm textarea {
-  width: 350px; }
-
-.contactForm input[name='fZip'] {
-  width: 80px; }
-
-.contactForm input[name='fHouse'] {
-  width: 120px; }
-
-.contactForm input::-webkit-input-placeholder {
-  color: transparent; }
-
-.contactForm input:-ms-input-placeholder {
-  color: transparent; }
-
-.contactForm input::-ms-input-placeholder {
-  color: transparent; }
-
-.contactForm input::placeholder {
-  color: transparent; }
-
-@media screen and (min-width: 1024px) {
-  .contactForm dt {
+    margin-bottom: 1.5rem; }
+  .contactForm form {
+    margin: 0 auto;
+    text-align: center; }
+  .contactForm .error {
+    font-size: .8em;
+    color: #900; }
+  .contactForm input.error {
+    border: 1px solid #900; }
+  .contactForm .required {
+    font-weight: bold; }
+    .contactForm .required:after {
+      font-size: .8em;
+      content: '*'; }
+  .contactForm dl {
+    text-align: left;
     display: block;
-    text-align: left; } }
-
-@media screen and (min-width: 1024px) {
-  .contactForm {
-    margin-bottom: 30px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #ccc; } }
+    width: 100%; }
+  .contactForm dt,
+  .contactForm dd {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top; }
+  .contactForm dt {
+    min-width: 200px;
+    text-align: right;
+    padding: 0.3em 10px 0 0;
+    display: block;
+    text-align: left; }
+  .contactForm dd {
+    display: inline-block; }
+  .contactForm input[type='checkbox'] {
+    width: 20px; }
+  .contactForm input[type='text'] {
+    width: 350px; }
+  .contactForm textarea {
+    width: 350px; }
+  .contactForm input[name='fZip'] {
+    width: 80px; }
+  .contactForm input[name='fHouse'] {
+    width: 120px; }
+  .contactForm input::-webkit-input-placeholder {
+    color: transparent; }
+  .contactForm input:-ms-input-placeholder {
+    color: transparent; }
+  .contactForm input::-ms-input-placeholder {
+    color: transparent; }
+  .contactForm input::placeholder {
+    color: transparent; }
+  @media screen and (min-width: 1024px) {
+    .contactForm dt {
+      display: inline-block; } }
