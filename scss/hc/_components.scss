@@ -1,0 +1,39 @@
+
+// buttons
+.button {
+  &.is-hc-yellow {
+    background-color: $hc-color-yellow;
+    border-color: $hc-color-yellow;
+    color: #fff;
+    &:hover { 
+      border-color: darken( $hc-color-yellow, 10% ); 
+    }
+  }
+  &.is-hc-white {
+    background-color: #fff;
+    border-color: $hc-color-lightblue;
+    color: $hc-color-lightblue;
+    &:hover { 
+      color: $hc-color-blue;
+      border-color: $hc-color-blue;
+    }
+  }
+  &.is-hc-calculator {
+    font-size: 1.2em;
+    background-color: lighten( $hc-color-lightblue, 30% );
+    color: $hc-color-blue;
+    border-color: lighten( $hc-color-lightblue, 25% );
+    &:hover { 
+      border-color: $hc-color-lightblue; 
+    }
+  }
+  &.is-hc-productfinder {
+    font-size: 1.2em;
+    background-color: $hc-color-yellow;
+    border-color: $hc-color-yellow;
+    color: #fff;
+    &:hover { 
+      border-color: darken( $hc-color-yellow, 10% ); 
+    }
+  }
+}

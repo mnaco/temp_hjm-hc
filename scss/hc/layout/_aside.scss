@@ -60,4 +60,36 @@
   }
 }
 
-//
+// aside menu-group
+.cc-menu-group {
+  border: 1px solid #eee;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  li {
+    padding: 5px 10px;
+  }
+  input[type="radio"],
+  input[type="checkbox"] {
+    + span {
+      padding-left: .5em;
+    }
+  }
+  
+}
+// aside menu group title
+.cc-menu-group-title {
+  background: whitesmoke;
+  padding: .7em 10px .9em;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+// aside button-link
+.cc-aside-button {
+  margin: 1rem 0;
+  a { 
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

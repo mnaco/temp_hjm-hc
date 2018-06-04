@@ -18,6 +18,7 @@
 
 @import 'header';
 @import 'footer';
+@import 'components';
 
 // layout elements
 @import 'layout/layout';
@@ -28,12 +29,13 @@
 @import 'layout/product_list';
 
 // pages
-@import 'pages/startpage';
+@import 'pages/calculator';
+@import 'pages/contact';
 @import 'pages/entry';
+@import 'pages/glossary';
 @import 'pages/product_ab';
+@import 'pages/productfinder';
 @import 'pages/publications';
 @import 'pages/service';
-@import 'pages/calculator';
-@import 'pages/glossary';
-@import 'pages/contact';
+@import 'pages/startpage';
  
