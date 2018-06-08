@@ -134,3 +134,17 @@
     padding: 2rem;
   }
 }
+
+// section 'was sonst noch wichtig ist'
+.someImportantNews {
+  .importantItem {
+    position: relative;
+    padding: 0 0 1rem 0;
+    .icon { 
+      position: absolute;
+      left: 0;
+      top: 0.3em;
+    }
+    > div { padding-left: 20px; }
+  }
+}
