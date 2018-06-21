@@ -7589,6 +7589,34 @@ a {
   margin-left: 0;
   margin-right: 0; }
 
+.cc-default-styling ul {
+  list-style-type: disc;
+  margin: 0.5em 0 0.5em 1.5em; }
+
+.cc-default-styling li {
+  padding-bottom: 0.3em; }
+
+.cc-default-styling ol {
+  list-style-type: decimal; }
+
+.cc-default-styling ul ul, .cc-default-styling ol ul {
+  list-style-type: circle;
+  margin-left: 1em; }
+
+.cc-default-styling ol ol, .cc-default-styling ul ol {
+  list-style-type: lower-latin;
+  margin-left: 1em; }
+
+.cc-default-styling table {
+  border-collapse: collapse; }
+
+.cc-default-styling tr {
+  border-bottom: 1px solid #ccc; }
+
+.cc-default-styling th, .cc-default-styling td {
+  text-align: left;
+  padding: 0.2em 0.5em; }
+
 .accordions .accordion {
   display: -webkit-box;
   display: -ms-flexbox;
