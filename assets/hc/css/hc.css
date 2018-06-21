@@ -8107,8 +8107,25 @@ a.navbar-item {
   padding-top: 1rem;
   border-top: 1px solid #ccc; }
 
-.cc-product-image img {
-  border: 1px solid #dbdbdb; }
+.cc-product-image {
+  margin-bottom: 10px; }
+  .cc-product-image img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid #dbdbdb;
+    padding: 1px; }
+  .cc-product-image .lightbox-gallery a {
+    float: left;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 5px; }
+    .cc-product-image .lightbox-gallery a:first-child {
+      width: 75%;
+      height: auto;
+      margin-right: 5px; }
+    .cc-product-image .lightbox-gallery a:not(:first-child) {
+      width: 20%; }
 
 .cc-product-docs {
   font-size: 0.9em; }
@@ -8197,8 +8214,10 @@ a.navbar-item {
       -ms-flex: 0 140px;
           flex: 0 140px;
   padding: 5px; }
-  .cc-item-image .image {
+  .cc-item-image img {
     border: 1px solid #ccc; }
+    .cc-item-image img:not(:first-child) {
+      display: none; }
 
 .cc-view-list-option {
   padding-top: 0.5rem;

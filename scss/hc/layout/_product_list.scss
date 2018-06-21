@@ -71,8 +71,9 @@
   flex: 0 140px;
   // border-left: 1px solid $border;
   padding: 5px;
-  .image {
+  img {
     border: 1px solid #ccc;
+    &:not(:first-child) { display: none; }
   }
 }
 

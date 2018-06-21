@@ -61,9 +61,27 @@
     border-top: 1px solid #ccc;
   }
 }
+// product image
 .cc-product-image {
+  margin-bottom: 10px;
   img {
+    display: flex;
     border: 1px solid $border;
+    padding: 1px;
+  }
+  .lightbox-gallery {
+    a {
+      float: left;
+      display: block;
+      overflow: hidden;
+      margin-bottom: 5px;
+      &:first-child { 
+        width: 75%; 
+        height: auto;
+        margin-right: 5px;
+      }
+      &:not(:first-child) { width: 20%; }
+    }
   }
 }
 
