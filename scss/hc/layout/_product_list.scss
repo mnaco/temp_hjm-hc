@@ -84,3 +84,30 @@
   span:hover { color: $hc-color-blue; }
 }
 
+// product labels
+.cc-product-labels {
+  ul {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  li {
+    min-width: 130px;
+    max-width: 130px;
+    background: darken($hc-color-lightblue, 10%);
+    color: #fff;
+    padding: .5em;
+    margin: 0 5px 5px 0;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 1.2em;
+    font-size: .9em;
+    font-weight: bold;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+

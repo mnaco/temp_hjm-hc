@@ -8225,6 +8225,40 @@ a.navbar-item {
   .cc-view-list-option span:hover {
     color: #4d80b3; }
 
+.cc-product-labels ul {
+  margin: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.cc-product-labels li {
+  min-width: 130px;
+  max-width: 130px;
+  background: #3ca0d3;
+  color: #fff;
+  padding: .5em;
+  margin: 0 5px 5px 0;
+  text-align: center;
+  border-radius: 5px;
+  line-height: 1.2em;
+  font-size: .9em;
+  font-weight: bold;
+  min-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .cc-calculator .columns {
   margin: 2rem 0; }
 
