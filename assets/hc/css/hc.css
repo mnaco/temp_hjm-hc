@@ -8132,6 +8132,24 @@ a.navbar-item {
   .cc-product-docs li {
     padding-top: 0.7rem; }
 
+.cc-product-ce {
+  position: relative;
+  font-size: 32px;
+  line-height: 1em;
+  padding-left: 48px; }
+  .cc-product-ce::before {
+    position: absolute;
+    left: -4px;
+    top: 5px;
+    display: block;
+    width: 48px;
+    height: 32px;
+    background-image: url("../img/ce_symbol_x24.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    content: '';
+    opacity: 0.8; }
+
 .cc-product-list-block {
   margin: 2rem 0; }
 

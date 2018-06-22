@@ -90,3 +90,24 @@
   font-size: 0.9em;
   li { padding-top: 0.7rem }
 }
+
+// CE symbol
+.cc-product-ce {
+  position: relative;
+  font-size: 32px;
+  line-height: 1em;
+  padding-left: 48px;
+  &::before {
+    position: absolute;
+    left: -4px;
+    top: 5px;
+    display: block;
+    width: 48px;
+    height: 32px;
+    background-image: url("../img/ce_symbol_x24.png");
+    background-position: top center;
+    background-repeat: no-repeat; 
+    content: '';
+    opacity: 0.8;
+  }
+}
