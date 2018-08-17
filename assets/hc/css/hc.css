@@ -7990,7 +7990,8 @@ a {
   padding-bottom: 0.3em; }
 
 .cc-default-styling ol {
-  list-style-type: decimal; }
+  list-style-type: decimal;
+  margin: 0.5em 0 0.5em 1.5em; }
 
 .cc-default-styling ul ul, .cc-default-styling ol ul {
   list-style-type: circle;
@@ -8005,10 +8006,18 @@ a {
 
 .cc-default-styling tr {
   border-bottom: 1px solid #ccc; }
+  .cc-default-styling tr.headline td {
+    background: #f6f7f9; }
 
 .cc-default-styling th, .cc-default-styling td {
   text-align: left;
   padding: 0.2em 0.5em; }
+
+.cc-default-styling th {
+  background: #f6f7f9;
+  vertical-align: middle;
+  line-height: 1.2em;
+  padding: 0.5em; }
 
 .accordions .accordion {
   display: -webkit-box;
@@ -8527,17 +8536,17 @@ a.navbar-item {
 
 .cc-product-ce {
   position: relative;
-  font-size: 32px;
+  font-size: 20px;
   line-height: 1em;
-  padding-left: 48px; }
+  padding-left: 26px; }
   .cc-product-ce::before {
     position: absolute;
-    left: -4px;
-    top: 5px;
+    left: 0;
+    top: 3px;
     display: block;
-    width: 48px;
-    height: 32px;
-    background-image: url("../img/ce_symbol_x24.png");
+    width: 20px;
+    height: 14px;
+    background-image: url("../img/ce_symbol_x14.png");
     background-position: top center;
     background-repeat: no-repeat;
     content: '';
@@ -8683,7 +8692,7 @@ a.navbar-item {
 
 .cc-calculator .cc-arrow-column {
   position: relative;
-  min-width: 100px;
+  min-width: 80px;
   -webkit-box-flex: 0;
       -ms-flex: 0;
           flex: 0; }
@@ -8705,7 +8714,8 @@ a.navbar-item {
           transform: rotate(-45deg);
   -webkit-transform-origin: center;
           transform-origin: center;
-  width: 0.5em; }
+  width: 0.5em;
+  font-size: 50px; }
   @media screen and (min-width: 769px), print {
     .cc-calculator .cc-arrow {
       -webkit-transform: rotate(-135deg);
@@ -8715,11 +8725,17 @@ a.navbar-item {
 .cc-calculator .cc-result input {
   font-size: 3rem;
   padding: 1.5em 1em;
-  text-align: center; }
+  text-align: center;
+  padding: 0 0 0 10px;
+  text-align: left; }
   .cc-calculator .cc-result input:disabled {
-    color: #4a4a4a;
     background: #fff;
-    border-color: #ccc; }
+    border-color: #ccc;
+    color: #4d80b3;
+    font-size: 1em; }
+
+.cc-product-konzentratrechner-title {
+  font-weight: bold; }
 
 .contactForm {
   margin-bottom: 30px;
@@ -9014,7 +9030,8 @@ a.navbar-item {
   .cc-subcontent-list .title {
     color: #4d80b3;
     font-size: 1.3rem;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    cursor: pointer; }
 
 .cc-docs-menu {
   border: 1px solid #dbdbdb;

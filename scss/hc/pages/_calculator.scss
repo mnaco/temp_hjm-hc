@@ -13,7 +13,7 @@
   }
   .cc-arrow-column { 
     position: relative;
-    min-width: 100px;
+    min-width: 80px;
     flex: 0;
   }
   .cc-arrow {
@@ -26,17 +26,26 @@
       transform: rotate(-135deg);
       margin-top: -0.1em;
     }
+    font-size: 50px;
+    // left: 20px;
   }
   .cc-result { 
     input {
       font-size: 3rem;
       padding: 1.5em 1em;
       text-align: center;
+      padding: 0 0 0 10px;
+      text-align: left;
       &:disabled { 
-        color: $text;
         background: #fff;
         border-color: #ccc;
+        color: #4d80b3;
+        font-size: 1em;
       }
     }
   }
+}
+
+.cc-product-konzentratrechner-title {
+  font-weight: bold;
 }

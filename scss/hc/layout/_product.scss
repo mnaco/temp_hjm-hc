@@ -94,17 +94,17 @@
 // CE symbol
 .cc-product-ce {
   position: relative;
-  font-size: 32px;
+  font-size: 20px;
   line-height: 1em;
-  padding-left: 48px;
+  padding-left: 26px;
   &::before {
     position: absolute;
-    left: -4px;
-    top: 5px;
+    left: 0;
+    top: 3px;
     display: block;
-    width: 48px;
-    height: 32px;
-    background-image: url("../img/ce_symbol_x24.png");
+    width: 20px;
+    height: 14px;
+    background-image: url("../img/ce_symbol_x14.png");
     background-position: top center;
     background-repeat: no-repeat; 
     content: '';

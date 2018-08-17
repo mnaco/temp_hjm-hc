@@ -25,6 +25,7 @@ a {
   li { padding-bottom: 0.3em; }
   ol { 
       list-style-type: decimal; 
+      margin: 0.5em 0 0.5em 1.5em;
   }
   ul ul, ol ul { 
       list-style-type: circle; 
@@ -41,10 +42,19 @@ a {
   }
   tr {
     border-bottom: 1px solid #ccc;
+    &.headline {
+      td { background: $hc-color-whiteblue; }
+    }
   }
   th, td {
     text-align: left;
     padding: 0.2em 0.5em;
+  }
+  th { 
+    background: $hc-color-whiteblue;
+    vertical-align: middle;
+    line-height: 1.2em;
+    padding: 0.5em;
   }
 
 }
