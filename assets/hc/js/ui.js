@@ -97,3 +97,11 @@
   }
 
 })();
+
+/*
+** lightbox plugin init
+*/
+(function(){
+  jQuery('a[data-rel^=lightcase]').lightcase();
+  console.log('st');
+})();
