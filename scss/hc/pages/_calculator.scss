@@ -1,5 +1,8 @@
 // calcualtor (Konzentratrechner)
 .cc-calculator {
+  select {
+    font-size: 1.2em;
+  }
   .columns {
     margin: 2rem 0;
   }
@@ -40,7 +43,8 @@
         background: #fff;
         border-color: #ccc;
         color: #4d80b3;
-        font-size: 1em;
+        font-size: 1.2em;
+        font-weight: bold;
       }
     }
   }

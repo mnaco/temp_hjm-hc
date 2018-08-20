@@ -8691,6 +8691,9 @@ a.navbar-item {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.cc-calculator select {
+  font-size: 1.2em; }
+
 .cc-calculator .columns {
   margin: 2rem 0; }
 
@@ -8744,7 +8747,8 @@ a.navbar-item {
     background: #fff;
     border-color: #ccc;
     color: #4d80b3;
-    font-size: 1em; }
+    font-size: 1.2em;
+    font-weight: bold; }
 
 .cc-product-konzentratrechner-title {
   font-weight: bold; }
