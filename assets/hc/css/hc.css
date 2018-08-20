@@ -7975,6 +7975,9 @@ a {
   a.is-active {
     color: #4a4a4a; }
 
+strong {
+  color: #707070; }
+
 .title {
   color: #4d80b3; }
 
@@ -8564,6 +8567,15 @@ a.navbar-item {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  .cc-product-list > ul:after {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+    content: "";
+    width: 32%;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0; }
   .cc-product-list > ul li {
     margin-bottom: 1rem;
     width: 49%; }

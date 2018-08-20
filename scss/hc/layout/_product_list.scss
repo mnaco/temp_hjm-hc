@@ -8,6 +8,12 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    &:after {
+      flex: auto;
+      content: "";
+      width: 32%;
+      flex-grow: 0;
+    }
     li { 
       > a { 
         height: 100%;
@@ -25,6 +31,9 @@
       @include widescreen {
         width: 32%;
       }
+      // &:last-child {
+      //   padding-left: 2%;
+      // }
     }
   }
   // to show in 'list view' (default column view)
