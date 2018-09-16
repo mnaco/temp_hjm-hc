@@ -43,10 +43,20 @@ strong { color: #707070; }
     border-collapse: collapse;
   }
   tr {
-    border-bottom: 1px solid #ccc;
+    // border-bottom: 1px solid #ccc;
+    border-bottom: 0px;
+    border-top: 1px solid #ccc;
     &.headline {
+      border-bottom: 1px solid #ddd;
       td { background: $hc-color-whiteblue; }
     }
+    &.subline  {
+      border-bottom: 1px solid #eee;
+      td:first-child {
+        padding-left: 14px;
+      } 
+    } 
+    
   }
   th, td {
     text-align: left;

@@ -8008,9 +8008,16 @@ strong {
   border-collapse: collapse; }
 
 .cc-default-styling tr {
-  border-bottom: 1px solid #ccc; }
-  .cc-default-styling tr.headline td {
-    background: #f6f7f9; }
+  border-bottom: 0px;
+  border-top: 1px solid #ccc; }
+  .cc-default-styling tr.headline {
+    border-bottom: 1px solid #ddd; }
+    .cc-default-styling tr.headline td {
+      background: #f6f7f9; }
+  .cc-default-styling tr.subline {
+    border-bottom: 1px solid #eee; }
+    .cc-default-styling tr.subline td:first-child {
+      padding-left: 14px; }
 
 .cc-default-styling th, .cc-default-styling td {
   text-align: left;
@@ -9030,6 +9037,11 @@ a.navbar-item {
     margin-bottom: 2rem;
     border-bottom: 1px solid #dbdbdb;
     margin: 0; }
+    .cc-subcontent-list .columns .columns {
+      padding-left: 14px;
+      border-bottom: 0px; }
+      .cc-subcontent-list .columns .columns .cc-page-title h2 {
+        font-size: 1.3rem; }
   .cc-subcontent-list .column {
     padding: 0; }
   .cc-subcontent-list .cc-donwload {
