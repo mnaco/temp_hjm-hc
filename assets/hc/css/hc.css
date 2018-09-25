@@ -9041,7 +9041,8 @@ a.navbar-item {
       padding-left: 14px;
       border-bottom: 0px; }
       .cc-subcontent-list .columns .columns .cc-page-title h2 {
-        font-size: 1.3rem; }
+        font-size: 1.3rem;
+        cursor: pointer; }
   .cc-subcontent-list .column {
     padding: 0; }
   .cc-subcontent-list .cc-donwload {
@@ -9075,7 +9076,7 @@ a.navbar-item {
   .cc-docs-menu .column {
     padding: 0 0.75rem; }
     .cc-docs-menu .column.is-narrow {
-      width: 100px;
+      width: 160px;
       font-size: 0.9rem;
       color: #999;
       padding-bottom: 1rem; }
