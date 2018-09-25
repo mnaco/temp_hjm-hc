@@ -9062,6 +9062,29 @@ a.navbar-item {
     margin-bottom: 1rem;
     cursor: pointer; }
 
+.publicationsList .cc-subcontent-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 0; }
+
+.publicationsList .columns {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  border: 1px solid #dbdbdb;
+  margin: 0 0 15px;
+  padding: 10px; }
+
+@media screen and (min-width: 769px), print {
+  .publicationsList .columns {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%; } }
+
 .cc-docs-menu {
   border: 1px solid #dbdbdb;
   margin-bottom: 1rem;
