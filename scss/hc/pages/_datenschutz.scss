@@ -1,0 +1,25 @@
+.contentDatenschutz {
+  h3 { 
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 20px 0 5px;
+  }
+  h4 { 
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  ol.alphaList {
+    counter-reset: listStyle;
+    li {
+      margin-left: 1em;
+      counter-increment: listStyle;
+    }
+    li::before {
+      margin-right: 1em;
+      content: counter(listStyle, lower-alpha) ") ";
+    }
+  }
+  .indentBlock {
+    margin: 10px 0 10px 60px;
+  }
+}

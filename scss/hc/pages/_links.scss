@@ -1,0 +1,17 @@
+.linksList {
+  .cc-subcontent-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  .columns {
+    flex-basis: 100%;
+    border: 1px solid #dbdbdb;
+    margin: 0 0 15px;
+    padding: 10px;
+  }
+  @include tablet {
+    .columns { flex-basis: 49%; }
+  }
+}
