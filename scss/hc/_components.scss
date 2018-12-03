@@ -37,3 +37,10 @@
     }
   }
 }
+
+.hero-body {
+  padding: 2rem 1.5rem;
+  @include desktop {
+    padding: 3rem 1.5rem;
+  }
+}

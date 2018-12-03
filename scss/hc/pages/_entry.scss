@@ -8,9 +8,10 @@
   .title, 
   .subtitle {
     color: #fff;
+    margin-bottom: 1rem;
   }
   // background images
-  @include tablet {
+  @include desktop {
     padding-top: 3rem;
     padding-bottom: 3rem;
     &.cc-entrypage-ab {

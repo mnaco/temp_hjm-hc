@@ -8029,6 +8029,26 @@ strong {
   line-height: 1.2em;
   padding: 0.5em; }
 
+ol {
+  list-style-type: none;
+  counter-reset: item;
+  margin: 0;
+  padding: 0; }
+
+ol > li {
+  display: table;
+  counter-increment: item;
+  margin-bottom: 0.6em; }
+  ol > li:before {
+    content: counters(item, ".") ". ";
+    display: table-cell;
+    padding-right: 0.6em; }
+
+li ol > li {
+  margin: 0; }
+  li ol > li:before {
+    content: counters(item, ".") " "; }
+
 .accordions .accordion {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8339,6 +8359,12 @@ a.navbar-item {
   color: #fff; }
   .button.is-hc-productfinder:hover {
     border-color: #f19e04; }
+
+.hero-body {
+  padding: 2rem 1.5rem; }
+  @media screen and (min-width: 1024px) {
+    .hero-body {
+      padding: 3rem 1.5rem; } }
 
 .cc-section-dropdownmenu {
   margin-bottom: 1rem;
@@ -8831,8 +8857,9 @@ a.navbar-item {
   color: #fff; }
   .cc-entrypage-hero .title,
   .cc-entrypage-hero .subtitle {
-    color: #fff; }
-  @media screen and (min-width: 769px), print {
+    color: #fff;
+    margin-bottom: 1rem; }
+  @media screen and (min-width: 1024px) {
     .cc-entrypage-hero {
       padding-top: 3rem;
       padding-bottom: 3rem; }
@@ -9240,3 +9267,47 @@ label.checkbox {
     top: 0.3em; }
   .someImportantNews .importantItem > div {
     padding-left: 20px; }
+
+.contentDatenschutz h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 20px 0 5px; }
+
+.contentDatenschutz h4 {
+  font-weight: bold;
+  margin: 5px 0; }
+
+.contentDatenschutz ol.alphaList {
+  counter-reset: listStyle; }
+  .contentDatenschutz ol.alphaList li {
+    margin-left: 1em;
+    counter-increment: listStyle; }
+  .contentDatenschutz ol.alphaList li::before {
+    margin-right: 1em;
+    content: counter(listStyle, lower-alpha) ") "; }
+
+.contentDatenschutz .indentBlock {
+  margin: 10px 0 10px 60px; }
+
+.linksList .cc-subcontent-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 0; }
+
+.linksList .columns {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  border: 1px solid #dbdbdb;
+  margin: 0 0 15px;
+  padding: 10px; }
+
+@media screen and (min-width: 769px), print {
+  .linksList .columns {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%; } }
